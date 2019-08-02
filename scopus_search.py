@@ -1,4 +1,4 @@
-# scopus.py
+# scopus_search.py
 
 
 from pybliometrics.scopus import ScopusSearch
@@ -9,7 +9,7 @@ from pytictoc import TicToc
 t = TicToc()
 
 
-def execute_search(name):
+def execute_search(dump_name):
     """Execute a search on Scopus using Scopus Query Language and print brief results"""
     t.tic()
     s = ScopusSearch('TITLE-ABS ( energ*  OR  power  OR  load )  AND  '
@@ -24,6 +24,12 @@ def execute_search(name):
     # print(query_results.shape())
 
     # Select name for pickle data
-    # name = 'query_results_LCE2020_test'
-    query_results.to_pickle('./Scopus_dumps' + name + '.pkl')
+    query_results.to_pickle('./Scopus_dumps/' + dump_name + '.pkl')
     t.toc('Query and Saving DataFrame took ')
+
+
+def load_pickle():
+    """Reload pickled data and manipulate search results"""
+    results = pd.read_pickle('./Scopus_dumps/query_results_LCE2020.pkl')
+    print(results.head(), results.info())
+
