@@ -11,5 +11,6 @@ df = pd.DataFrame(csv)
 
 df.reindex(['Authors', 'Title', 'Year', 'Abstract', 'DOI', 'Link', 'Author Keywords', 'Index Keywords', 'References'])
 
-
+# UNDER CONSTRUCTION - Define key words for search query
+# keys = ['energ', 'manufacturing']
 
