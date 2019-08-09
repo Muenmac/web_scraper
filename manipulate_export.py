@@ -1,10 +1,23 @@
 # manipulate export.py
 
 
-import scopus_search as sco
+import pandas as pd
+import numpy as np
+
+try:
+    res = pd.read_pickle('/home/marc/PycharmProjects/web scraper/Scopus_dumps/query_results_LCE2020.pkl')
+except:
+    print("Reading data failed")
 
 
-sco.load_pickle('query_results_LCE2020.pkl')
+
+
+
+
+
+
+
+
 
 
 
