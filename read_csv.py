@@ -13,4 +13,3 @@ df.reindex(['Authors', 'Title', 'Year', 'Abstract', 'DOI', 'Link', 'Author Keywo
 
 # UNDER CONSTRUCTION - Define key words for search query
 # keys = ['energ', 'manufacturing']
-
