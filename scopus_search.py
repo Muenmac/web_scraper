@@ -16,7 +16,7 @@ query = ('TITLE-ABS ( energ*  OR  power  OR  load )  AND  '
                      'AND NOT  KEY ( *gas* )')
 
 def execute_search(dump_name, query):
-    """Execute a search on Scopus using Scopus Query Language and print brief results"""
+    """Execute a search on Scopus using Scopus Query Language and print brief results- Define Query in advance"""
     t.tic()
     res = ScopusSearch(query)
 
@@ -27,8 +27,8 @@ def execute_search(dump_name, query):
     t.toc('Query and saving DataFrame took ')
 
 
-def load_pickle(res_pickle):
-    """Reload pickled data and manipulate search results, res_pickle = Name of pickle data in Scopus_dumps folder"""
-    results = pd.read_pickle('./Scopus_dumps/'+res_pickle)
-    # print(results.head(), results.info())
+# def load_pickle(res_pickle):
+#     """Reload pickled data and manipulate search results, res_pickle = Name of pickle data in Scopus_dumps folder"""
+#     results = pd.read_pickle('./Scopus_dumps/'+res_pickle)
+
 
