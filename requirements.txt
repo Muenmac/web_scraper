@@ -8,7 +8,7 @@ chardet==3.0.4
 html5lib==1.0.1
 idna==2.8
 importlib-metadata==0.18
-lxml==4.3.4
+lxml==4.6.2
 more-itertools==7.1.0
 multidict==4.5.2
 numpy==1.17.0
