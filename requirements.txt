@@ -25,7 +25,7 @@ pytest==4.6.3
 python-dateutil==2.8.0
 pytictoc==1.5.0
 pytz==2019.1
-PyYAML==5.1.1
+PyYAML==5.4
 requests==2.22.0
 selenium==3.141.0
 six==1.12.0
